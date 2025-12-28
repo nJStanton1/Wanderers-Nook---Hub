@@ -7,13 +7,14 @@ export const Layout = ({ children, subdomain }) => {
 
   // Map subdomains to body classes
   const subdomainMap = {
+    hub: 'hub',
     walks: 'walks',
     trees: 'trees',
     // Add more subdomains here in the future
   };
 
   // Determine body class with fallback
-  const bodyClass = subdomainMap[subdomain] || 'walks';
+  const bodyClass = subdomainMap[subdomain] || 'hub';
 
 
   //Return final layout here

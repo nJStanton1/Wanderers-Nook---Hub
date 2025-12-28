@@ -88,6 +88,20 @@
     }
 
     /* Subdomain overrides */
+    /* HUB */
+    body.hub .accent-background {
+        @apply bg-accent-hub text-white;
+    }
+    body.hub .accent-dark-background {
+        @apply bg-accent-hub-dark;
+    }
+    body.hub .accent-border {
+        @apply border-accent-hub;
+    }
+    body.hub .accent-border-dark {
+        @apply border-accent-hub-dark;
+    }
+
     /* WALKS */
     body.walks .accent-background {
         @apply bg-accent-walks text-white;

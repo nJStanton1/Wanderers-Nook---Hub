@@ -44,6 +44,8 @@ module.exports = {
         'brand':'#5e5c3b',
         'brand-deco-1':'#868254',
         'brand-deco-2':'#B2A769',
+        'accent-hub':'#88498F',
+        'accent-hub-dark':'#733E79',
         'accent-walks':'#AF6246',
         'accent-walks-dark':'#92523A',
         'accent-trees':'#C9870B',
