@@ -1,3 +1,136 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Chillax-Variable';
+        src: url('../../static/fonts/Chillax-Variable.woff2') format('woff2'),
+             url('../../static/fonts/Chillax-Variable.woff') format('woff'),
+             url('../../static/fonts/Chillax-Variable.ttf') format('truetype');
+        font-weight: 200 700;
+        font-display: swap;
+        font-style: normal;
+      }
+    
+
+    html {
+        @apply text-white font-sans;
+    }
+
+    h1 {
+        @apply 
+            text-heading-hero
+            md:text-heading-hero-md
+            lg:text-heading-hero-lg
+            font-thin
+            text-center
+            md:text-start
+            py-2;
+    }
+    h2 {
+        @apply 
+            text-heading-lg
+            md:text-heading-lg-md
+            md:text-heading-lg-lg
+            text-center
+            md:text-start
+            py-2;
+    }
+    h3 {
+        @apply 
+            text-heading-md
+            md:text-heading-md-md
+            lg:text-heading-md-lg
+            font-medium
+            text-center
+            md:text-start
+            py-2;
+    }
+    p {
+        @apply 
+            text-body
+            md:text-body-lg
+            font-normal
+            text-center
+            md:text-start
+            pb-2;
+    }
+    ul {
+        @apply 
+            pl-5;
+    }
+    li {
+        @apply 
+            py-1 
+            text-body;
+    }
+    
+    a.blog-content {
+        @apply underline;
+    }
+
+    /* ACCENT COLOURS */
+    /* Generic accent classes for background/text */
+    .accent-background {
+        /* background/text set via body subdomain */
+    }
+    .accent-dark-background {
+        /* hover/dark background set via body subdomain */
+    }
+
+    /* Generic accent classes for borders */
+    .accent-border {
+        /* border color set via body subdomain */
+    }
+    .accent-border-dark {
+        /* hover/dark border color set via body subdomain */
+    }
+
+    /* Subdomain overrides */
+    /* WALKS */
+    body.walks .accent-background {
+        @apply bg-accent-walks text-white;
+    }
+    body.walks .accent-dark-background {
+        @apply bg-accent-walks-dark;
+    }
+    body.walks .accent-border {
+        @apply border-accent-walks;
+    }
+    body.walks .accent-border-dark {
+        @apply border-accent-walks-dark;
+    }
+
+    /* TREES */
+    body.trees .accent-background {
+        @apply bg-accent-trees text-white;
+    }
+    body.trees .accent-dark-background {
+        @apply bg-accent-trees-dark;
+    }
+    body.trees .accent-border {
+        @apply border-accent-trees;
+    }
+    body.trees .accent-border-dark {
+        @apply border-accent-trees-dark;
+    }
+}
+
+@layer components {
+    .section-content {
+
+    }
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hide-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
