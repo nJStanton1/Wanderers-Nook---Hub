@@ -6,7 +6,7 @@ const yaml = require('js-yaml');
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://wanderersnook.co.uk/',
-    title: 'The Wanderer\'s Nook',
+    title: 'The Wanderers Nook',
     author: 'Nathaniel J Stanton',
     description: 'Discover adventure, trees and the outdoors in and around Manchester.',
     image: './static/logos/Logo.png', 
