@@ -3,6 +3,13 @@ import * as PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
+const ExternalNavbarLink = ({ title, to}) => (
+  <a 
+    className="w-full lg:w-auto text-lg lg:text-base text-center my-1 lg:my-0 lg:mx-2 lg:px-2 flex-shrink-0 flex-grow-0 border-b-2 hover:font-medium hover:bg-gray-600/15 transition duration:300"
+    href={to}>
+      {title}
+  </a>
+)
 const NavbarLink = ({ title, to }) => (
     <Link
       className="w-full lg:w-auto text-lg lg:text-base text-center my-1 lg:my-0 lg:mx-2 lg:px-2 flex-shrink-0 flex-grow-0 border-b-2 hover:font-medium hover:bg-gray-600/15 transition duration:300"
@@ -73,10 +80,7 @@ export default class Navbar extends React.Component {
                 </div>
                 <div className={'flex-shrink-0 mb-1 lg:py-2 mr-0 md:mr-3 lg:w-auto flex-wrap items-center ' + this.state.menuOpenClassName}>
                     <NavbarLink to={'/'} title={'Home'} />
-                    <NavbarLink to={'/routes'} title={'Routes'} />
-                    <NavbarLink to={'/locations'} title={'Locations'} />
-                    <NavbarLink to={'/about'} title={'About Me'} />
-                    {/* <NavbarLink to={'/blog'} title={'Blog'} /> */}
+                    <ExternalNavbarLink to={'https://walks.wanderersnook.co.uk/'} title={'Hikes'} />
                 </div>
                 
             </nav>
