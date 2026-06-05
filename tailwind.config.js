@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Chillax-Variable", "sans-serif"],
+      mono: ["DraftingMono", "mono"],
     },
     extend: {
       fontSize: {

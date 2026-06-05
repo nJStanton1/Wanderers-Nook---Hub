@@ -5,31 +5,152 @@
 @layer base {
     @font-face {
         font-family: 'Chillax-Variable';
-        src: url('../../static/fonts/Chillax-Variable.woff2') format('woff2'),
-             url('../../static/fonts/Chillax-Variable.woff') format('woff'),
-             url('../../static/fonts/Chillax-Variable.ttf') format('truetype');
+        src: url('../../static/fonts/Chillax/Chillax-Variable.ttf') format('woff2'),
+             url('../../static/fonts/Chillax/Chillax-Variable.woff') format('woff'),
+             url('../../static/fonts/Chillax/Chillax-Variable.ttf') format('truetype');
         font-weight: 200 700;
         font-display: swap;
         font-style: normal;
       }
     
+    /* DraftingMono Thin */
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-ThinItalic.ttf') format('truetype');
+        font-weight: 100;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* DraftingMono ExtraLight */
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-ExtraLightItalic.ttf') format('truetype');
+        font-weight: 200;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* DraftingMono Light */
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-LightItalic.ttf') format('truetype');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* DraftingMono Regular */
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-Italic.ttf') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* DraftingMono Medium */
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-MediumItalic.ttf') format('truetype');
+        font-weight: 500;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* DraftingMono SemiBold */
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-SemiBoldItalic.ttf') format('truetype');
+        font-weight: 600;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* DraftingMono Bold */
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'DraftingMono';
+        src: url('../../static/fonts/DraftingMono/DraftingMono-BoldItalic.ttf') format('truetype');
+        font-weight: 700;
+        font-style: italic;
+        font-display: swap;
+    }
 
     html {
-        @apply text-white font-sans;
+        @apply text-white font-mono;
     }
 
     h1 {
         @apply 
+            font-sans
+            font-thin
             text-heading-hero
             md:text-heading-hero-md
             lg:text-heading-hero-lg
-            font-thin
             text-center
             md:text-start
             py-2;
     }
     h2 {
         @apply 
+            font-sans
+            font-normal
             text-heading-lg
             md:text-heading-lg-md
             md:text-heading-lg-lg
@@ -39,6 +160,8 @@
     }
     h3 {
         @apply 
+            font-sans
+            font-thin
             text-heading-md
             md:text-heading-md-md
             lg:text-heading-md-lg
@@ -51,7 +174,7 @@
         @apply 
             text-body
             md:text-body-lg
-            font-normal
+            font-light
             text-center
             md:text-start
             pb-2;
