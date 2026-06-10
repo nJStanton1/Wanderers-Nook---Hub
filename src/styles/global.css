@@ -139,7 +139,7 @@
     h1 {
         @apply 
             font-sans
-            font-thin
+            font-normal
             text-heading-hero
             md:text-heading-hero-md
             lg:text-heading-hero-lg

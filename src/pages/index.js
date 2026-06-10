@@ -20,13 +20,13 @@ const IndexPage = () => {
       </div>
 
       <Padding>
-        <div className='w-full pt-3'>
+        <div className='w-full pt-4'>
           <p className='w-full'>Welcome to the Nook! Here you'll find everything I find interesting about the outdoors!</p>
-          <p className="w-full">What started out as a hiking blog has slowly evolved over the years to a blog about basically anything I find interesting. So it may seem a bit of an odd mix of ideas. Fortunately, it's only me, and I need not concern myself 'Brand Recognition', 'disruptive synergy', 'value added engagementism' or any other such nonsense. Enjoy reading the eclectic interests of an amateur arborist, and a professional antic.</p>
-          <p className='w-full'>I hope exploring my site will help you explore the outdoors.</p>
+          <p className="w-full">What started out as a hiking blog has slowly evolved over the years to a blog about basically anything I find interesting. So it may seem a bit of an odd mix of ideas. Fortunately, it's only me, and I need not concern myself 'Brand Recognition', 'disruptive synergy', 'value added engagementism' or any other such nonsense.</p>
+          <p className='w-full'>Enjoy reading the eclectic interests of an amateur arborist, and a professional antic.</p>
         </div>
 
-        <div className='w-full'>
+        <div className='w-full pt-4'>
           <h2 className=''>Hikes</h2>
           <p className='w-full'>Are you a veteran hiker looking for new places to wander? A new hiker, who's always wanted to go outside more but never quite knew where to go? You'll find a walk to suit you here.</p>
           <p className='w-full'>All my walks are accessible by public transport, with some starting in the city centre. Travel details are included in all my walks.</p>

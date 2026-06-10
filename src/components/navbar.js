@@ -5,14 +5,14 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const ExternalNavbarLink = ({ title, to}) => (
   <a 
-    className="w-full lg:w-auto text-lg lg:text-base text-center my-1 lg:my-0 lg:mx-2 lg:px-2 flex-shrink-0 flex-grow-0 border-b-2 hover:font-medium hover:bg-gray-600/15 transition duration:300"
+    className="font-sans w-full lg:w-auto text-lg lg:text-xl text-center my-1 lg:my-0 lg:mx-2 lg:px-2 flex-shrink-0 flex-grow-0 border-b-2 hover:font-medium hover:bg-gray-600/15 transition duration:300"
     href={to}>
       {title}
   </a>
 )
 const NavbarLink = ({ title, to }) => (
     <Link
-      className="w-full lg:w-auto text-lg lg:text-base text-center my-1 lg:my-0 lg:mx-2 lg:px-2 flex-shrink-0 flex-grow-0 border-b-2 hover:font-medium hover:bg-gray-600/15 transition duration:300"
+      className="font-sans w-full lg:w-auto text-lg lg:text-xl text-center my-1 lg:my-0 lg:mx-2 lg:px-2 flex-shrink-0 flex-grow-0 border-b-2 hover:font-medium hover:bg-gray-600/15 transition duration:300"
       to={to}
     >
       {title}
